@@ -4,45 +4,59 @@ import { Cpu, Zap, Code2, CircuitBoard, Bot, Wrench } from "lucide-react";
 const Skills = () => {
   const skills = [
     {
-      icon: Cpu,
-      title: "Industrial Automation",
-      description: "PLC programming, SCADA systems, and industrial control solutions",
-      level: 95,
-      color: "from-primary to-secondary"
-    },
-    {
-      icon: CircuitBoard,
-      title: "Embedded Systems",
-      description: "Microcontroller programming, real-time systems, and firmware development",
-      level: 90,
-      color: "from-secondary to-primary"
-    },
-    {
-      icon: Code2,
-      title: "Verilog & VHDL",
-      description: "FPGA design, digital logic, and hardware description languages",
-      level: 85,
-      color: "from-primary to-secondary"
-    },
-    {
       icon: Zap,
       title: "Circuit Design",
       description: "PCB design, simulation, and electrical engineering solutions",
-      level: 88,
-      color: "from-secondary to-primary"
-    },
-    {
-      icon: Bot,
-      title: "Robotics & IoT",
-      description: "Autonomous systems, sensor integration, and connected devices",
-      level: 92,
+      level: 90,
       color: "from-primary to-secondary"
     },
     {
+      icon: Code2,
+      title: "C++ Programming",
+      description: "Object-oriented programming, data structures, and algorithm implementation",
+      level: 85,
+      color: "from-secondary to-primary"
+    },
+    {
+      icon: CircuitBoard,
+      title: "Digital Logic Design",
+      description: "Boolean algebra, sequential circuits, and logic optimization",
+      level: 80,
+      color: "from-primary to-secondary"
+    },
+    {
+      icon: Code2,
+      title: "Web Development",
+      description: "HTML, CSS, and responsive web design fundamentals",
+      level: 75,
+      color: "from-secondary to-primary"
+    },
+    {
       icon: Wrench,
-      title: "Engineering Design",
-      description: "CAD modeling, system architecture, and innovative problem-solving",
-      level: 87,
+      title: "AutoCAD 3D Modeling",
+      description: "3D design, mechanical drafting, and technical drawings",
+      level: 80,
+      color: "from-primary to-secondary"
+    },
+    {
+      icon: Cpu,
+      title: "Microcontrollers & Arduino",
+      description: "Embedded programming, sensor integration, and hardware interfacing",
+      level: 85,
+      color: "from-secondary to-primary"
+    },
+    {
+      icon: Zap,
+      title: "Signal Analysis",
+      description: "Analog and digital signal processing and analysis",
+      level: 70,
+      color: "from-primary to-secondary"
+    },
+    {
+      icon: Bot,
+      title: "Problem Solving & Debugging",
+      description: "Analytical thinking, troubleshooting, and systematic debugging",
+      level: 85,
       color: "from-secondary to-primary"
     }
   ];

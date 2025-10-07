@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   const milestones = [
-    { year: "2024", title: "Senior Automation Engineer", icon: Award },
-    { year: "2022", title: "Advanced System Design", icon: Code },
-    { year: "2020", title: "Innovation & Research", icon: Lightbulb },
+    { year: "Self-Practice & Projects", title: "AutoCAD 3D Modeling", icon: Award },
+    { year: "Practical Projects Based", title: "Arduino & Embedded Systems", icon: Code },
   ];
 
   return (
@@ -45,22 +44,29 @@ const About = () => {
               innovation and productivity.
             </p>
 
-            {/* Download CV Button */}
-            <Button 
-              className="bg-card hover:bg-muted border-2 border-primary/30 text-foreground font-semibold px-6 py-6 rounded-xl transition-all duration-300 hover:border-primary hover:shadow-glow group"
-            >
-              <Download className="mr-2 group-hover:animate-bounce" size={20} />
-              Download CV
-            </Button>
+            {/* CV Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <Button 
+                className="bg-gradient-to-r from-primary to-secondary text-background font-semibold px-6 py-6 rounded-xl transition-all duration-300 hover:shadow-glow-strong hover:scale-105 group"
+              >
+                <Download className="mr-2 group-hover:animate-bounce" size={20} />
+                Download CV
+              </Button>
+              <Button 
+                className="bg-card hover:bg-muted border-2 border-primary/30 text-foreground font-semibold px-6 py-6 rounded-xl transition-all duration-300 hover:border-primary hover:shadow-glow group"
+              >
+                Preview CV
+              </Button>
+            </div>
           </div>
         </div>
 
-        {/* Career Timeline */}
+        {/* Certifications */}
         <div className="mt-20">
           <h3 className="font-orbitron font-bold text-2xl text-center mb-12">
-            Career <span className="text-primary">Journey</span>
+            Certifications & <span className="text-primary">Training</span>
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {milestones.map((milestone, index) => {
               const Icon = milestone.icon;
               return (
@@ -69,12 +75,14 @@ const About = () => {
                   className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow group animate-fade-in"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="text-background" size={28} />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                      <Icon className="text-background" size={20} />
                     </div>
-                    <div className="text-primary font-orbitron font-bold text-2xl">{milestone.year}</div>
-                    <h4 className="font-semibold text-lg text-foreground">{milestone.title}</h4>
+                    <div>
+                      <h4 className="font-semibold text-lg text-foreground mb-1">{milestone.title}</h4>
+                      <p className="text-muted-foreground text-sm">{milestone.year}</p>
+                    </div>
                   </div>
                 </Card>
               );

@@ -6,40 +6,34 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Smart Industrial Controller",
-      description: "Advanced PLC-based automation system for manufacturing with real-time monitoring and predictive maintenance capabilities",
-      tags: ["Automation", "PLC", "IoT", "SCADA"],
+      title: "Automation Road Light System",
+      description: "Designed an automatic street lighting system that switches lights ON/OFF based on ambient light conditions using LDR sensors",
+      tags: ["Arduino", "LDR Sensor", "Relays", "Automation"],
       gradient: "from-primary to-secondary"
     },
     {
-      title: "FPGA Signal Processor",
-      description: "High-performance digital signal processing system using Verilog for real-time audio and sensor data analysis",
-      tags: ["FPGA", "Verilog", "DSP", "Embedded"],
+      title: "Electronic Safe Locker",
+      description: "Implemented a digital safe lock using a keypad and logic-based control with attempt limitations for enhanced security",
+      tags: ["Digital Logic", "Keypad", "7-Segment Display", "Registers"],
       gradient: "from-secondary to-primary"
     },
     {
-      title: "Autonomous Robot Platform",
-      description: "Multi-sensor robotic system with AI-powered navigation, obstacle avoidance, and task automation",
-      tags: ["Robotics", "AI Systems", "Computer Vision"],
+      title: "Remote Control Switching",
+      description: "Developed a wireless switching system for appliances using an IR remote for convenient home automation",
+      tags: ["IR Sensors", "Arduino", "Relay Modules", "IoT"],
       gradient: "from-primary to-secondary"
     },
     {
-      title: "IoT Energy Monitor",
-      description: "Smart energy monitoring system with cloud integration, providing real-time analytics and consumption optimization",
-      tags: ["IoT", "Cloud", "Analytics", "Embedded"],
+      title: "Thief Detecting System",
+      description: "Built a security system that detects unauthorized movement and triggers an alarm to prevent intrusions",
+      tags: ["PIR Sensor", "Arduino", "Buzzer", "Security"],
       gradient: "from-secondary to-primary"
     },
     {
-      title: "Custom PCB Design Suite",
-      description: "Multi-layer PCB designs for industrial applications including motor controllers and sensor arrays",
-      tags: ["PCB Design", "Circuit Design", "Hardware"],
+      title: "Speaker Amplifier",
+      description: "Created a portable audio system that amplifies sound signals for speaker output with mobile audio input",
+      tags: ["LM471 IC", "Amplifier", "Audio", "Circuit Design"],
       gradient: "from-primary to-secondary"
-    },
-    {
-      title: "Trading Algorithm System",
-      description: "MQL5-based automated trading system with advanced risk management and market analysis algorithms",
-      tags: ["MQL5", "Algorithms", "Finance", "Automation"],
-      gradient: "from-secondary to-primary"
     }
   ];
 
